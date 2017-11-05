@@ -25,13 +25,15 @@
     <input type="text" name="price" value="<%=request.getAttribute("price")%>">
     <p>Choice manufacturer</p>
     <select name="manufacturer"/>
-    <%for(Manufacturer manufacturer: manufacturers){
-        out.println("<option ");
-        if(manufacturer.getName().equals(request.getAttribute("manufacturerName")))
-            out.println("selected");
-        out.println(" value=\"" + manufacturer.getName() +"\">"
-                + manufacturer.getName() + "</option>");
-    }%>
+    <%
+        for (Manufacturer manufacturer : manufacturers) {
+            out.println("<option ");
+            if (manufacturer.getName().equals(request.getAttribute("manufacturerName")))
+                out.println("selected");
+            out.println(" value=\"" + manufacturer.getName() + "\">"
+                    + manufacturer.getName() + "</option>");
+        }
+    %>
     </select>
     <br>
     <br>

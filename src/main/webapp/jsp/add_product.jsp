@@ -21,17 +21,19 @@
 <h2>Add new product</h2>
 <form action="addProduct" method="POST">
     <p>Input Name</p>
-    <input type="text" name="name" />
+    <input type="text" name="name"/>
     <br>
     <p>Input Price</p>
     <input type="text" name="price"/>
     <br>
     <p>Choice Manufacturer</p>
     <select name="manufacturer"/>
-    <%for(Manufacturer manufacturer: manufacturers){
-        out.println("<option value=\"" + manufacturer.getName() +"\">"
-                + manufacturer.getName() + "</option>");
-    }%>
+    <%
+        for (Manufacturer manufacturer : manufacturers) {
+            out.println("<option value=\"" + manufacturer.getName() + "\">"
+                    + manufacturer.getName() + "</option>");
+        }
+    %>
     </select>
     <br>
     <br>

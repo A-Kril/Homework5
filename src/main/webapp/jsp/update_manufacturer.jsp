@@ -19,7 +19,7 @@
     <p>Input new Name</p>
     <input type="text" name="name" value="<%=request.getAttribute("name")%>"/>
     <br>
-    <input type="hidden" name="manufacturer_id" value="<%=request.getAttribute("manufacturerId")%>" />
+    <input type="hidden" name="manufacturer_id" value="<%=request.getAttribute("manufacturerId")%>"/>
     <input type="submit" value="Update"/>
 </form>
 

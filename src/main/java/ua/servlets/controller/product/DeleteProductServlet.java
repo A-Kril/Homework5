@@ -21,6 +21,6 @@ public class DeleteProductServlet extends HttpServlet {
         Product product = DaoSingleton.getINSTANCE().getProductDAO().getById(productId);
         DaoSingleton.getINSTANCE().getProductDAO().delete(product);
 
-        req.getRequestDispatcher("/jsp/delete_product.jsp").forward(req,resp);
+        req.getRequestDispatcher("/jsp/delete_product.jsp").forward(req, resp);
     }
 }
